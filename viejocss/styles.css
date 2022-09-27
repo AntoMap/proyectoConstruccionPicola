@@ -5,6 +5,12 @@
 }
 
 /* TÍTULO h1 */
+body{
+    font-family: 'Aclonica', sans-serif;
+    letter-spacing: 0.2rem;
+    overflow-x: hidden;
+    background-color: #FAF8F3;
+}
 .titulo {
     font-family: 'Aclonica', sans-serif;
     font-size: 20px;
@@ -93,7 +99,7 @@ font-face {
     gap: 20px;
 }
 
-.link {
+.link:hover {
     color: #425C81;
     text-decoration: none;
 }
@@ -103,7 +109,7 @@ font-face {
     text-decoration: underline;
 }
 
-.link:visited {
+.link:focus {
     color: #425C81
 }
 
@@ -137,7 +143,46 @@ font-face {
     padding: 0px;
     background: #fff;
 }
-
+.tituloBanner {
+    color:#425C81;
+    text-align: center;
+    padding-top: 3em;
+}
+.textoBanner {
+    color:#425C81;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1em;
+    font-size: larger;
+    font-style: italic;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#425C81;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 50px;
+    text-align: center;
+  }
 /*estilo cards*/
 .container__cards {
     display: grid;
