@@ -27,7 +27,16 @@ body {
     text-align: center;
     
 }
-
+/*boton Wtp*/
+#btn-mas{
+    display: none;
+    }
+.contenerdorIcon{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+/*texto general*/
 .cuerpo {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -44,6 +53,7 @@ body {
     padding: 2px;
     color: #425C81
 }
+
 
 /*estilo tap bar*/
 .menu {
@@ -63,8 +73,8 @@ body {
         position: relative;
         width: 100px;
         height: 70px;
-        left: 10px;
-        top: 5px;
+        left: 70px;
+        top: 0px;
     }
 
     .lista {
