@@ -4,6 +4,16 @@ body {
     overflow-x: hidden;
     background-color: #FAF8F3;
 }
+/*boton Wtp*/
+#btn-mas{
+    display: none;
+    }
+.contenerdorIcon{
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+    }
+    /*boton Wtp*/
 
 .titulo {
     font-family: 'Aclonica', sans-serif;
@@ -27,16 +37,8 @@ body {
     text-align: center;
     
 }
-/*boton Wtp*/
-#btn-mas{
-    display: none;
-    }
-.contenerdorIcon{
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-    }
-/*texto general*/
+
+
 .cuerpo {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -74,7 +76,7 @@ body {
         width: 100px;
         height: 70px;
         left: 70px;
-        top: 0px;
+        top: 5px;
     }
 
     .lista {
