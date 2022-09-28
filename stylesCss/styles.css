@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*general*/
 body {
   font-family: "Aclonica", sans-serif;
   letter-spacing: 0.2rem;
@@ -6,6 +7,18 @@ body {
   background-color: #FAF8F3;
 }
 
+/*boton Wtp*/
+#btn-mas {
+  display: none;
+}
+
+.contenerdorIcon {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+/*boton Wtp*/
 .titulo {
   font-family: "Aclonica", sans-serif;
   font-size: 20px;
@@ -28,18 +41,6 @@ body {
   text-align: center;
 }
 
-/*boton Wtp*/
-#btn-mas {
-  display: none;
-}
-
-.contenerdorIcon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
-/*texto general*/
 .cuerpo {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -72,11 +73,11 @@ body {
   padding-bottom: 3rem;
 }
 .menu .logo {
-  position: relative;
+  position: absolute;
   width: 100px;
   height: 70px;
   left: 70px;
-  top: 0px;
+  top: 5px;
 }
 .menu .lista {
   list-style-type: none;
@@ -102,7 +103,39 @@ body {
   text-decoration: underline;
 }
 
-/*estilo carrusel*/
+/*estilo nevegacion inferior*/
+.containerContacto {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #F2F0E9;
+  margin: 0px;
+}
+
+.linkC {
+  text-decoration: none;
+  color: #425C81;
+  font-size: 15px;
+}
+.linkC:hover {
+  color: #F2F0E9;
+  text-decoration: underline;
+}
+
+/*EStilo Barra inferior*/
+.barraInferior {
+  background-color: #425C81;
+}
+.barraInferior footer {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  color: #EAE5D1;
+}
+.barraInferior .col {
+  font-size: 14px;
+  margin: 1rem;
+}
+
 .carouselControls {
   margin-top: 10%;
   margin-bottom: 10%;
@@ -175,7 +208,8 @@ body {
 .cards .imgCards {
   border-radius: 0px 30px 0px;
 }
-.cards .botonVerMas {
+
+.botonVerMas {
   background: #EAE5D1;
   border-radius: 0 0 15px 15px;
   padding: 10px;
@@ -183,8 +217,8 @@ body {
   text-decoration: none;
   color: #EDA148;
 }
-.cards .botonVerMas:hover {
-  color: #EDA148;
+.botonVerMas:hover {
+  color: #425C81;
   text-decoration: underline;
 }
 
@@ -263,39 +297,6 @@ body {
   color: #EDA148;
 }
 
-/*estilo nevegacion inferior*/
-.containerContacto {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: #EAE5D1;
-  margin: 0px;
-}
-
-.linkC {
-  text-decoration: none;
-  color: #425C81;
-  font-size: 15px;
-}
-.linkC:hover {
-  color: #EDA148;
-  text-decoration: underline;
-}
-
-/*EStilo Barra inferior*/
-.barraInferior {
-  background-color: #425C81;
-}
-.barraInferior footer {
-  display: flex;
-  overflow: hidden;
-  justify-content: space-between;
-  color: #EAE5D1;
-}
-.barraInferior .col {
-  font-size: 14px;
-  margin: 1rem;
-}
-
 /*Estilo de contacto y presupuesto*/
 .imagenFondo {
   height: 2fr;
@@ -339,35 +340,10 @@ body {
   background-color: #EDA148;
 }
 .imagenFondo .container-imagen-fondo button .btn-btn-primary {
-  color: #EDA148;
+  color: #425C81;
 }
 .imagenFondo .container-imagen-fondo button:hover {
   color: #EDA148;
-}
-
-/*estilo de galeria de proyectos*/
-.container__galeria {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  justify-items: center;
-}
-.container__galeria .imgGaleria {
-  position: relative;
-  width: 380px;
-  height: 380px;
-  padding: 10px;
-  margin: 10px;
-  background-color: #425C81;
-  border: 1px solid lightgray;
-  border-radius: 15px 0px 15px 0px;
-}
-
-/*estilo de servicio*/
-.cards {
-  border: 1px solid lightgray;
-  border-radius: 15px 0px 15px 0px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -395,6 +371,10 @@ body {
   }
   h3 {
     text-orientation: vertical;
+  }
+  .subtituloPerfil {
+    visibility: hidden;
+    display: none;
   }
   .container__cards {
     grid-template-columns: repeat(1, 1fr);

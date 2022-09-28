@@ -1,0 +1,25 @@
+/*estilo de galeria de proyectos*/
+.container__galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+
+    .imgGaleria {
+        position: relative;
+        width: 380px;
+        height: 380px;
+        padding: 10px;
+        margin: 10px;
+        background-color: $color-principal;
+        border: 1px solid lightgray;
+        border-radius: 15px 0px 15px 0px;
+    }
+}
+
+/*estilo de servicio*/
+.cards {
+    border: 1px solid lightgray;
+    border-radius: 15px 0px 15px 0px;
+}

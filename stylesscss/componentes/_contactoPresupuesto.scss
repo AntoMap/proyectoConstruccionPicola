@@ -1,0 +1,55 @@
+/*Estilo de contacto y presupuesto*/
+
+.imagenFondo {
+    height: 2fr;
+    width: auto;
+    background: url(../imagenes/imagenes/frente\ 1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .container-imagen-fondo {
+        height: 10%;
+        padding: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        margin: 10px;
+
+        .cardsPresupuesto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            gap: 20px;
+            border: 1px solid lightgray;
+            box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+            border-radius: 15px 0px 0px 15px;
+            background-color: beige;
+        }
+
+        .mapaContacto {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            justify-content: space-between;
+            border: 1px solid lightgray;
+            box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+            border-radius: 0px 15px 15px 0px;
+            background-color: beige;
+        }
+
+        button {
+            background-color: $color-terciario;
+
+            .btn-btn-primary {
+                color: $color-principal;
+            }
+
+            &:hover {
+                color: $color-terciario;
+            }
+        }
+    }
+}
