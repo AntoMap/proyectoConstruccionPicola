@@ -1,7 +1,7 @@
 /*general*/
 
 body {
-    font-family: $fuente-principal;
+    font-family: map-get($map: $menu, $key:font-family );
     letter-spacing: 0.2rem;
     overflow-x: hidden;
     background-color: $color-fondo;
@@ -30,13 +30,13 @@ body {
     line-height: 10px;
     align-items: center;
     text-align: center;
-    color: $color-principal;
+    color: nth($colores, $n:1 );
 }
 
 .subtitulo {
-    font-family: $fuente-principal;
+    font-family: map-get($map: $menu, $key:font-family );
     font-size: 18px;
-    color: $color-principal;
+    color: map-get($map: $menu, $key:background-color );
     font-style: bold;
     line-height: 20px;
     text-align: center;
